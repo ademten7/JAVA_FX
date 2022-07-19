@@ -78,6 +78,7 @@
                 <String fx:value="This is Option 5"/>
             </FXCollections>
         </items>
+        <!--To selected value-->
         <value>
             <String fx:value="This is Option 4"/>
         </value>
