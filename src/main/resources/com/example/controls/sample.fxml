@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
 
 <?import javafx.scene.control.Button?>
@@ -25,9 +23,8 @@
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.ColorPicker?>
 <?import javafx.scene.control.DatePicker?>
-<GridPane alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
-          fx:controller="com.example.controls.HelloController">
-    <!--
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
     <Button GridPane.rowIndex="0" GridPane.columnIndex="0" text="Click me">
         <graphic>
             <ImageView>
@@ -36,7 +33,7 @@
         </graphic>
     </Button>
     <Label GridPane.rowIndex="0" GridPane.columnIndex="1" text="This is a label"
-           textFill="blue" WrapText="true">
+        textFill="blue" WrapText="true">
         <font>
             <Font name="Arial italic" size="12"/>
         </font>
@@ -46,7 +43,7 @@
             </ImageView>
         </graphic>
     </Label>
--->
+
     <fx:define>
         <ToggleGroup fx:id="colorToggleGroup"/>
     </fx:define>
@@ -94,11 +91,21 @@
         </items>
     </ChoiceBox>
     <Slider GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="4" min="0" max="100"
-            showTickLabels="true" showTickMarks="true" minorTickCount="4" snapToTicks="true"/>
+        showTickLabels="true" showTickMarks="true" minorTickCount="4" snapToTicks="true"/>
     <Spinner GridPane.rowIndex="2" GridPane.columnIndex="4" min="0" max="100"
-             editable="true" initialValue="50"/>
+        editable="true" initialValue="50"/>
 
     <ColorPicker GridPane.rowIndex="3" GridPane.columnIndex="0"/>
     <DatePicker GridPane.rowIndex="3" GridPane.columnIndex="1"/>
 
+
 </GridPane>
+
+
+
+
+
+
+
+
+
